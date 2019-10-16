@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/avatar"/>
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="35dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:src="@drawable/search"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/ivModanaku"
+            android:layout_marginLeft="16dp"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wallet"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modanaku"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="55dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 1.000.000"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/rlEmployee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivEmployee"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/employees" />
+
+                    <TextView
+                        style="@style/TextViewDashboard"
+                        android:layout_below="@+id/ivEmployee"
+
+                        android:text="Karyawan" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlPayroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivPayroll"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/hand" />
+
+                    <TextView
+
+                        style="@style/TextViewDashboard"
+                        android:text="Payroll"
+                        android:layout_below="@+id/ivPayroll"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlModanaku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/ivModanaku"
+                        android:layout_width="75dp"
+                        android:layout_height="81dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/wallet" />
+
+                    <TextView
+
+                        style="@style/TextViewDashboard"
+                        android:text="Modanaku"
+                        android:layout_below="@+id/ivModanaku"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlcuti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivcuti"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/holiday"/>
+
+                    <TextView
+
+                        style="@style/TextViewDashboard"
+                        android:text="Cuti"
+                        android:layout_below="@+id/ivcuti"/>
+
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        >
+
+       <EditText
+           android:id="@+id/text1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Insert Number"
+           android:ems="5"
+           android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Insert Number"
+            android:ems="10"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btn_jumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="Jumlahkan"
+            android:background="@drawable/button_radius"
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
